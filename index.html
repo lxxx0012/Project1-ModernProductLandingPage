@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BrandName</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <button class="hamburger" id="hamburger">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero fade-in">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="scroll-indicator"></div>
+
+        <div class="hero-content">
+            <h1 class="typewriter">Experience the Future of Productivity</h1>
+            <p>Designed for creators, thinkers, and doers, our platform 
+                brings clarity to your workflow and momentum to your goals. 
+                Whether you’re managing complex projects or simply trying 
+                to stay organized, we give you the tools to move faster, 
+                stay focused, and unlock your full potential. Everything 
+                you need is right at your fingertips—beautifully designed, 
+                effortlessly intuitive, and built to help you thrive.</p>
+            <button class="cta-btn glow">Get Started</button>
+        </div>
+
+        <!-- Floating shapes -->
+        <div class="floating-shape shape1">></div>
+        <div class="floating-shape shape2">></div>
+        <div class="floating-shape shape3">></div>
+
+        <div class="particles"></div>
+    </section>
+
+    <section id="features" class="features fade-in">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Fast</h3>
+                <p>Lightning-quick performance to keep you moving.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure</h3>
+                <p>Your data stays protected at all times.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Reliable</h3>
+                <p>Built to perform consistently, day after day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="product fade-in">
+        <h2>Our Product</h2>
+        <div class="product-content">
+            <img src="img/kaweewatt-hand-5983141_1280.jpg" alt="Product Image">
+            <div>
+                <p>Designed with precision and crafted for excellence. This 
+                    is the tool you have been waiting for.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing fade-in" id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="billing-toggle">
+        <span>Monthly</span>
+        <label class="switch">
+            <input type="checkbox" id="billing-toggle">
+            <span class="slider"></span>
+        </label>
+        <span>Yearly</span>
+    </div>
+
+    <div class="pricing-cards">
+        <div class="pricing-card">
+            <h3>Basic</h3>
+            <p class="price" data-monthly="$9/mo" data-yearly="$90/yr">$9/mo</p>
+            <button class="cta-btn">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Pro</h3>
+            <p class="price" data-monthly="$19/mo" data-yearly="$190/yr">$19/mo</p>
+            <button class="cta-btn">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <p class="price" data-monthly="$49/mo" data-yearly="$490/yr">$49/mo</p>
+            <button class="cta-btn">Choose Plan</button>
+        </div>
+    </div>
+    </section>
+
+    <section id="testimonials" class="testimonials fade-in">
+        <h2>What Our Users Say</h2>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-card active">
+                <p>"This product changed the way I work!</p>
+                <span>- Alex</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Simple, powerful, and beautifully designed.</p>
+                <span>- Jordan</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"I can't imagine going back to how I worked before.</p>
+                <span>- Taylor</span>
+        </div>
+    </section>
+
+    <section class="newsletter fade-in">
+    <h2>Stay Updated</h2>
+    <p>Join our newsletter for updates and special offers.</p>
+
+    <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button class="cta-btn" type="submit">Subscribe</button>
+    </form>
+</section>
+
+    <section class="faq fade-in" id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">What makes this product unique?</button>
+            <div class="faq-answer">
+                <p>Our product is designed with precision, speed, and reliability
+                    to help you stay ahead.</p>
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is there customer support?</button>
+            <div class="faq-answer">
+                <p>Yes! Our support team is available 24/7 to assist you with anything you need.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I try it before buying?</button>
+            <div class="faq-answer">
+                <p>Absolutely! We offer a free trial so you can experience the benefits firsthand.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Us</h2>
+        <form class="contacts-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textaarea placeholder="Your Message" rows="5" required></textaarea>
+            <button class="cta-btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Back to top button -->
+     <button id="back-to-top" class="back-to-top">↑</button>
+
+    <footer>
+        <p>@ 2026 BrandName. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
